@@ -4,12 +4,12 @@ cards = [i for i in range(11)]
 assert(len(cards) == 11)
 
 def game_take_5(seq):
-    cards = seq[:8]
+    cards = seq[:5]
     if 0 in cards:
         return 0
     else:
         return sum(cards)
-    
+
 def game_take_half(seq):
     score = 0
     for c in seq:
